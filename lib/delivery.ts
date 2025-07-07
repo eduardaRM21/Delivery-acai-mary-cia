@@ -67,7 +67,7 @@ const DELIVERY_FEES_BY_NEIGHBORHOOD: Record<string, number> = {
 // Configuração padrão de entrega (fallback)
 const DEFAULT_DELIVERY_CONFIG = {
   default_fee: 3.00, // Taxa padrão para bairros não listados
-  free_delivery_threshold: 50.00 // Pedidos acima de R$ 50 têm entrega grátis
+  free_delivery_threshold: 50.00, // Pedidos acima de R$ 50 têm entrega grátis
 }
 
 export interface DeliveryCalculation {

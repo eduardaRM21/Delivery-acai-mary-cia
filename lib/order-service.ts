@@ -83,7 +83,7 @@ export class OrderService {
           nome: data.customerName,
           telefone: data.customerPhone,
           endereco: data.customerAddress,
-          distancia: deliveryCalculation.distance
+          
         }
       }
       
@@ -138,7 +138,7 @@ export class OrderService {
 
       // Enviar pedido para o WhatsApp do admin
       try {
-        const adminPhone = process.env.NEXT_PUBLIC_STORE_WHATSAPP || '27988646488'
+        const adminPhone = "5527988646488"
         const message = this.buildWhatsAppMessage(pedido, itens)
         const encodedMessage = encodeURIComponent(message)
         if (typeof window !== 'undefined') {
